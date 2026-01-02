@@ -33,6 +33,7 @@ const Skills = () => {
     "NoSQL",
     "AWS",
     "PowerShell Scripting",
+    "Detailed Design Documentation",
   ];
 
   const tools = [

@@ -26,7 +26,9 @@ const Resume = () => {
         "Restful APIs",
         "PowerShell Scripting",
         "Code Review",
-        "Unit Testing"
+        "Unit Testing",
+        "Agile Methodologies",
+        "Detailed Design Documentation",
       ],
     },
     {
