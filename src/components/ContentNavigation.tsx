@@ -48,9 +48,9 @@ const Container = styled.div`
 `;
 
 const NavItem = styled.span`
-  width: 76px;
   display: flex;
   padding: 8px 6px 8px 0;
+  margin-right: 20px;
 
   user-select: none;
 

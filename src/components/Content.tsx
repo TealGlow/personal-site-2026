@@ -22,7 +22,7 @@ const Content = () => {
         currentNavItem={currentNavItem}
         onNavItemClick={handleNavItemClick}
       />
-      <div>{buildContent(currentNavItem)}</div>
+      <Container>{buildContent(currentNavItem)}</Container>
     </ContentContainer>
   );
 };
@@ -45,7 +45,7 @@ const buildContent = (item: NavItemType) => {
 };
 
 const ContentContainer = styled.div`
-  width: 70%;
+  width:100%;
   height: 100%;
 
   overflow: hidden;
@@ -53,4 +53,11 @@ const ContentContainer = styled.div`
   margin-left: 40px;
 
   color: white;
+`;
+
+const Container = styled.div`
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
 `;

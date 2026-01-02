@@ -99,6 +99,5 @@ const Container = styled.div`
   width: 70%;
   height: 80vh;
 
-  overflow-y: auto;
-  overflow-x: hidden;
+
 `;

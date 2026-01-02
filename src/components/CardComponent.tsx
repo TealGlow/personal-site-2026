@@ -50,12 +50,15 @@ const Time = styled.time`
 `;
 
 const Body = styled.div`
-  padding: 20px;
+  padding: 20px 20px 20px 0;
+  width: 100%;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.div`
   font-weight: bold;
   font-size: 20px;
+  border-bottom: 1px solid #ccc;
 `;
 
 const Description = styled.p`
