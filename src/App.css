@@ -1,0 +1,12 @@
+#root,
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #564256;
+  background-image: url("./assets/az-subtle.png");
+  font-family: "Source Code Pro", monospace;
+
+  padding: 0;
+  margin: 0;
+}
