@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const Sidebar = () => {
-
   return (
     <SidebarContainer>
       <Name>Alyssa Comstock</Name>
@@ -12,10 +11,7 @@ const Sidebar = () => {
         <div>Beaverton, OR</div>
       </Contact>
       <Links>
-        <LinkContainer
-          href="https://github.com/TealGlow"
-          target="_blank"
-        >
+        <LinkContainer href="https://github.com/TealGlow" target="_blank">
           [github]
         </LinkContainer>
         <LinkContainer
@@ -24,7 +20,12 @@ const Sidebar = () => {
         >
           [linkedin]
         </LinkContainer>
-          <LinkContainer href="../assets/Alyssa Comstock - 2025 resume.pdf" download>[download full resume]</LinkContainer>
+        <LinkContainer
+          href="../assets/Alyssa Comstock - 2025 resume.pdf"
+          download
+        >
+          [download full resume]
+        </LinkContainer>
       </Links>
     </SidebarContainer>
   );

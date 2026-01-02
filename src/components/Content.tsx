@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ContentNavigation from "./ContentNavigation";
 import { useState } from "react";
-import {NavItems, type NavItemType } from "./ContentModels";
+import { NavItems, type NavItemType } from "./ContentModels";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Skills from "./Pages/Skills";
@@ -14,7 +14,6 @@ const Content = () => {
 
   const handleNavItemClick = (item: NavItemType) => {
     setCurrentNavItem(item);
-
   };
 
   return (
@@ -41,15 +40,15 @@ const buildContent = (item: NavItemType) => {
     case NavItems.PROJECTS:
       return <Projects />;
     default:
-        throw new Error("Unknown content item");
+      throw new Error("Unknown content item");
   }
-}
+};
 
 const ContentContainer = styled.div`
   width: 70%;
   height: 100%;
 
-  overflow:hidden;
+  overflow: hidden;
 
   margin-left: 40px;
 
