@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Card from "../TimelineItem";
+import Card from "../Card";
 
 const Resume = () => {
   const resumeItems = [

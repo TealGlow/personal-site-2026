@@ -7,10 +7,11 @@ interface Props {
   subtitle?: string;
   date?: string;
   description?: string;
+  link?: { display: string; url: string };
   skills?: string[];
 }
 
-const Card = ({ title, subtitle, date, description, skills }: Props) => (
+const Card = ({ title, link, subtitle, date, description, skills }: Props) => (
   <Container>
     {date && <Time>{date}</Time>}
     <Body>
@@ -18,6 +19,11 @@ const Card = ({ title, subtitle, date, description, skills }: Props) => (
 
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
       {description && <Description>{description}</Description>}
+      {link && (
+        <Link href={link.url} target="_blank">
+          {link.display}
+        </Link>
+      )}
       {skills && (
         <div>
           {skills.map((skill, index) => (
@@ -65,4 +71,20 @@ const Description = styled.p`
 const Subtitle = styled.p`
   margin-top: 0px;
   font-size: 14px;
+`;
+
+const Link = styled.a`
+  margin-right: 10px;
+
+  color: #50f9fbff;
+  text-decoration: none;
+
+  &:hover {
+    color: #00ced1;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: #008b8b;
+  }
 `;
