@@ -25,6 +25,8 @@ const Resume = () => {
         "Microservices",
         "Restful APIs",
         "PowerShell Scripting",
+        "Code Review",
+        "Unit Testing"
       ],
     },
     {
@@ -55,6 +57,11 @@ const Resume = () => {
         "Bash",
         "Linux",
         "Ubuntu",
+        "Restful API",
+        "MySQL",
+        "Git",
+        "GitHub",
+        "Node.JS"
       ],
     },
     {
