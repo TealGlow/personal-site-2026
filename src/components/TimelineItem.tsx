@@ -77,4 +77,6 @@ const Skill = styled.span`
     margin: 5px;
     font-size: 12px;
     font-weight: bold;
+
+    user-select: none;
 `;
