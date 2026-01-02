@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import TimelineItem from "./TimelineItem";
+import TimelineItem from "../TimelineItem";
 
 const Resume = () => {
     const resumeItems =[

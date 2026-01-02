@@ -2,9 +2,10 @@ import styled from "styled-components";
 import ContentNavigation from "./ContentNavigation";
 import { useState } from "react";
 import {NavItems, type NavItemType } from "./ContentModels";
-import About from "./About";
-import Resume from "./Resume";
-import Skills from "./Skills";
+import About from "./Pages/About";
+import Resume from "./Pages/Resume";
+import Skills from "./Pages/Skills";
+import Projects from "./Pages/Projects";
 
 const Content = () => {
   const [currentNavItem, setCurrentNavItem] = useState<NavItemType>(
@@ -37,6 +38,8 @@ const buildContent = (item: NavItemType) => {
       return <Resume />;
     case NavItems.SKILLS:
       return <Skills />;
+    case NavItems.PROJECTS:
+      return <Projects />;
     default:
         throw new Error("Unknown content item");
   }

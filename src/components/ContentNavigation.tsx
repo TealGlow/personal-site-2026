@@ -27,6 +27,12 @@ const ContentNavigation = ({ currentNavItem, onNavItemClick }: Props) => {
       >
         Skills
       </NavItem>
+      <NavItem
+        onClick={() => onNavItemClick(NavItems.PROJECTS)}
+        className={currentNavItem === NavItems.PROJECTS ? "active" : ""}
+      >
+        Projects
+      </NavItem>
     </Container>
   );
 };

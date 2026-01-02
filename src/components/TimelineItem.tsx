@@ -1,6 +1,7 @@
 
 import React from "react";
 import styled from "styled-components";
+import Pill from "./Pill";
 
 interface Props{
     title: string;
@@ -22,7 +23,7 @@ const TimelineItem = ({ title,  subtitle, date, description, skills }: Props) =>
                 <Description >{description}</Description>
                 {skills && <div>
                         {skills.map((skill, index) => (
-                            <Skill key={index}>{skill}</Skill>
+                            <Pill key={index} fontSize="14px" fontWeight="bold">{skill}</Pill>
                         ))}
              
                 </div>}
@@ -66,17 +67,4 @@ const Description = styled.p`
 const Subtitle = styled.p`
     margin-top: 0px;
     font-size: 14px;
-`;
-
-const Skill = styled.span`
-    display: inline-block;
-    background-color: #d6bcd5ff;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 12px;
-    font-weight: bold;
-
-    user-select: none;
 `;
