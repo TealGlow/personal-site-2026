@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Pill from "./Pill";
+import Pill from "./PillComponent";
 
 interface Props {
   title?: string;
   subtitle?: string;
   date?: string;
   description?: string;
-  link?: { display: string; url: string };
+  link?: {display: string; url: string};
   skills?: string[];
 }
 
@@ -19,19 +19,15 @@ const Card = ({ title, link, subtitle, date, description, skills }: Props) => (
 
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
       {description && <Description>{description}</Description>}
-      {link && (
-        <Link href={link.url} target="_blank">
-          {link.display}
-        </Link>
-      )}
+      {link && <Link href={link.url} target="_blank" >{link.display}</Link>}
       {skills && (
-        <div>
+        <Skills>
           {skills.map((skill, index) => (
             <Pill key={index} fontSize="14px" fontWeight="bold">
               {skill}
             </Pill>
           ))}
-        </div>
+        </Skills>
       )}
     </Body>
   </Container>
@@ -73,9 +69,11 @@ const Subtitle = styled.p`
   font-size: 14px;
 `;
 
-const Link = styled.a`
-  margin-right: 10px;
+const Skills = styled.div`
+  margin-top: 10px;
+`;
 
+const Link = styled.a`
   color: #50f9fbff;
   text-decoration: none;
 
@@ -88,3 +86,4 @@ const Link = styled.a`
     color: #008b8b;
   }
 `;
+

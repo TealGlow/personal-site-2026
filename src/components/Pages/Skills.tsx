@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Pill from "../Pill";
+import Pill from "../PillComponent";
 
 const Skills = () => {
   const languages = [

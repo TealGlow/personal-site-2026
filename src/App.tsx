@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "./components/SidebarComponent";
 import Content from "./components/Content";
 
 function App() {
