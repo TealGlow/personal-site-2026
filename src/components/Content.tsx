@@ -4,6 +4,7 @@ import { useState } from "react";
 import {NavItems, type NavItemType } from "./ContentModels";
 import About from "./About";
 import Resume from "./Resume";
+import Skills from "./Skills";
 
 const Content = () => {
   const [currentNavItem, setCurrentNavItem] = useState<NavItemType>(
@@ -35,7 +36,7 @@ const buildContent = (item: NavItemType) => {
     case NavItems.RESUME:
       return <Resume />;
     case NavItems.SKILLS:
-      return <div>Skills here</div>;
+      return <Skills />;
     default:
         throw new Error("Unknown content item");
   }

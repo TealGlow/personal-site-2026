@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const Sidebar = () => {
+
   return (
     <SidebarContainer>
       <Name>Alyssa Comstock</Name>
@@ -11,21 +12,19 @@ const Sidebar = () => {
         <div>Beaverton, OR</div>
       </Contact>
       <Links>
-        <Link
-          onClick={() => window.open("https://github.com/TealGlow", "_blank")}
+        <LinkContainer
+          href="https://github.com/TealGlow"
+          target="_blank"
         >
           [github]
-        </Link>
-        <Link
-          onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/alyssa-b-comstock/",
-              "_blank",
-            )
-          }
+        </LinkContainer>
+        <LinkContainer
+          href="https://www.linkedin.com/in/alyssa-b-comstock/"
+          target="_blank"
         >
           [linkedin]
-        </Link>
+        </LinkContainer>
+          <LinkContainer href="../assets/Alyssa Comstock - 2025 resume.pdf" download>[download full resume]</LinkContainer>
       </Links>
     </SidebarContainer>
   );
@@ -36,6 +35,7 @@ export default Sidebar;
 const SidebarContainer = styled.div`
   border-radius: 10px;
   margin: 0 25px;
+  width: 275px;
 
   color: white;
   align-self: start;
@@ -58,10 +58,11 @@ const Contact = styled.p`
 
 const Links = styled.div``;
 
-const Link = styled.span`
+const LinkContainer = styled.a`
   margin-right: 10px;
 
   color: #50f9fbff;
+  text-decoration: none;
 
   &:hover {
     color: #00ced1;

@@ -12,11 +12,11 @@ interface Props{
 
 
 
-const TimelineItem = ({ title, subtitle, date, description, skills }: Props) => (
+const TimelineItem = ({ title,  subtitle, date, description, skills }: Props) => (
         <Card>
             <Time>{date}</Time>
             <Container>
-                <Title >{title}</Title>
+                <Title>{title}</Title>
 
                 {subtitle && <Subtitle>{subtitle}</Subtitle>}
                 <Description >{description}</Description>
@@ -73,7 +73,7 @@ const Skill = styled.span`
     background-color: #d6bcd5ff;
     color: black;
     padding: 5px 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 5px;
     font-size: 12px;
     font-weight: bold;
