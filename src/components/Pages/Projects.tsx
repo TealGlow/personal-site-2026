@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Blog Api",
       description: "Blog api with authentication and authorization so that users can login, create blog posts, delete blog posts, view blog posts, and edit blog posts.  Created so that I can practice standing up a Web API in C#. Also, another way for me to practice Dockerizing.",
       link:{display: "[GitHub Repo]", url:"https://github.com/TealGlow/blog-api"},
-      skills:["C#", ".Net", "MongoDb", "Restful API", "Database CRUD operations", "Authenication", "Authorization", "Json Web Tokens", "Bearer Tokens", "Postman", "Insomnia", "Web API", "Docker", "Docker Desktop"]
+      skills:["C#", ".Net", "MongoDb", "Restful API", "Database CRUD operations", "Authentication", "Authorization", "Json Web Tokens", "Bearer Tokens", "Postman", "Insomnia", "Web API", "Docker", "Docker Desktop"]
     },
     {
         title: "Stitch Tracker",
