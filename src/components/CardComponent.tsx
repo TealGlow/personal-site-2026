@@ -6,7 +6,7 @@ interface Props {
   subtitle?: string;
   date?: string;
   description?: string;
-  link?: {display: string; url: string};
+  link?: { display: string; url: string };
   skills?: string[];
 }
 
@@ -18,7 +18,11 @@ const Card = ({ title, link, subtitle, date, description, skills }: Props) => (
 
       {subtitle && <Subtitle>{subtitle}</Subtitle>}
       {description && <Description>{description}</Description>}
-      {link && <Link href={link.url} target="_blank" >{link.display}</Link>}
+      {link && (
+        <Link href={link.url} target="_blank">
+          {link.display}
+        </Link>
+      )}
       {skills && (
         <Skills>
           {skills.map((skill, index) => (
@@ -38,6 +42,11 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
+   @media (max-width: 998px) {
+    flex-direction: column;
+    border-left: 1px solid #ccc;
+    padding: 5px;
+  }
 `;
 
 const Time = styled.time`
@@ -47,6 +56,10 @@ const Time = styled.time`
   min-width: 200px;
   text-wrap: nowrap;
   font-weight: bold;
+
+  @media (max-width: 998px) {
+    border-bottom: 1px solid #ccc;
+  }
 `;
 
 const Body = styled.div`
@@ -59,6 +72,10 @@ const Title = styled.div`
   font-weight: bold;
   font-size: 20px;
   border-bottom: 1px solid #ccc;
+
+   @media (max-width: 998px) {
+    border-bottom: none;
+  }
 `;
 
 const Description = styled.p`
@@ -88,4 +105,3 @@ const Link = styled.a`
     color: #008b8b;
   }
 `;
-

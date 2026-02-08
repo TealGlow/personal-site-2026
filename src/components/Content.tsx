@@ -45,7 +45,7 @@ const buildContent = (item: NavItemType) => {
 };
 
 const ContentContainer = styled.div`
-  width:100%;
+  width:70%;
   height: 100%;
 
   overflow: hidden;
@@ -60,4 +60,8 @@ const Container = styled.div`
   height: 90vh;
   overflow-y: auto;
   overflow-x: hidden;
+
+  @media (max-width: 998px) {
+    height:70%;
+  }
 `;

@@ -44,6 +44,10 @@ const Container = styled.div`
   flex-direction: row;
   padding-top: 36px;
 
+   @media (max-width: 768px) {
+    font-size: 12px;
+  }
+
   margin-bottom: 20px;
 `;
 

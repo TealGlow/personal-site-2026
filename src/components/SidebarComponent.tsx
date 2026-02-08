@@ -34,9 +34,13 @@ const Sidebar = () => {
 export default Sidebar;
 
 const SidebarContainer = styled.div`
-  border-radius: 10px;
   margin: 0 25px;
   width: 275px;
+
+  @media (max-width: 768px) {
+    margin-left: 40px;
+    width:70%;
+  }
 
   color: white;
   align-self: start;

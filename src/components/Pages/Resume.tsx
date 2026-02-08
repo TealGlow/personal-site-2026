@@ -63,7 +63,7 @@ const Resume = () => {
         "MySQL",
         "Git",
         "GitHub",
-        "Node.JS"
+        "Node.JS",
       ],
     },
     {
@@ -98,6 +98,4 @@ const Container = styled.div`
   flex-direction: column;
   width: 70%;
   height: 80vh;
-
-
 `;
